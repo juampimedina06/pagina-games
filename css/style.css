@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Rubik+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Rubik+Pixels&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: rgb(34, 34, 34);
+}
+/*--------navbar-hidden-------*/
+.dis__none{
+    display: none;
+}
+/*--------INICIO-------*/
+.background__videogame{
+    background-image: url(/svg/1.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+background-size: cover;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.main__title{
+    position: relative;
+    color: white;
+    h1{
+        font-size: 100px;
+        font-family: "Pixelify Sans", sans-serif;
+        margin-bottom: 0;
+    }
+    h3{
+        font-size: 4em;
+        color: rgb(255, 131, 179);
+        text-shadow: 0 0 10px blueviolet;
+        font-family: "Pixelify Sans", sans-serif;
+    }
+}
+
+.presents{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1em;
+    h2{
+        color: rgb(87, 243, 243);
+        text-shadow:0 0 10px aqua;
+        font-family: "Montserrat", sans-serif;
+    }
+}
+
+/*-------MENU-MAIN------*/
+
+.background__menu-principal{
+    background-image: url(/svg/2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__title-menu{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    h1{
+        font-size: 2em;
+        font-family: "Pixelify Sans", sans-serif;
+    }
+}
+.cont-list-i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-i li{
+    font-size: 2.5vw;
+    padding: .40em;
+    color: rgb(87, 243, 243);
+    text-shadow:0 0 10px aqua;
+}
+/*-------INTRODUCCION--------*/
+
+.background__introduccion{
+    height: 100vh;
+    background-image: url(/svg/3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cont__introduccion{
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 700px;
+    height: 100vh;
+    text-align: center;
+    h1{
+        font-size: 100px;
+        font-family: "Pixelify Sans", sans-serif;
+        margin-bottom: .45em;
+    }
+    .txt__introduccion h2{
+        font-size: 2em;
+        text-align: center;
+        color: rgb(163, 72, 248);
+        text-shadow: 0 0 10px blueviolet;
+    }
+}
+
+
+.txt__introduccion p{
+    text-align: start;
+    font-size: 1.4vh;
+}
+
+/*-----PUNTO CLAVE-----*/
+.punto__clave{
+    display: flex;
+    background-color: #08152e;
+}
+.cont-img{
+    width: 50%;
+}
+.mando{
+    object-fit: cover;
+    object-position: left;
+    width: 100%;
+    height: 100svh;
+}
+
+.cont__punto-clave{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+.punto__clave-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h1{
+        text-align: center;
+        font-size: 5em;
+        color: white;
+        font-family: "Pixelify Sans", sans-serif;
+    }
+}
+
+.punto__clave-list{
+    color: white;
+    width: 90%;
+    ol{
+        font-size: 1.4vh;
+        list-style: decimal-leading-zero ;
+        
+    }
+}
+p{
+    text-align: start;
+}
+
+strong{
+    color: rgb(163, 72, 248);
+}
+
+
+
+@media (max-height:1080px){
+    .punto__clave-list ol{
+       font-size: 2.5vh;
+    }
+
+ }
+ /*----HISTORIA------*/
+
+ .background__Historia{
+    margin: 10em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 5em;
+ }
+
+ .cont__historia-img{
+    text-align: center;
+    position: relative;
+    min-width: 300px;
+    max-width: 80%;
+    h1{
+        color: white;
+        font-family: "Pixelify Sans", sans-serif;
+        font-size: 2em;
+        margin-top: 0;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+    img{
+        border-radius: 5em;
+        width: 100%;
+        object-fit: cover;
+    }
+ }
+
+ .dis__h{
+    display: none;
+ }
+
+ .cont__ElFuturo{
+  position: relative;
+ }
+ .cont__videofuturo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: black;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: ease-in-out .5s;
+    button{
+        border: none;
+        margin: 2em 0;
+        width: 6.2em;
+        height: 2.4em;
+        border-radius: 18px;
+        font-weight: 500;
+        background: transparent;
+        color: rgb(109, 243, 243);
+        text-shadow: 0 0 10px aqua;
+        transition: ease-in-out .7s;
+        &:hover{
+            background-color: #08152e;
+            color: aqua;
+        }
+    }
+    iframe{
+        border-radius: 4em;
+        box-shadow: 0 0 40px #08152e;
+    }
+ }
+
+ #showvideo{
+    border: none;
+    margin: 2em 0;
+    width: 6.2em;
+    height: 2.4em;
+    border-radius: 18px;
+    font-weight: 500;
+    background: #0e2550;
+    color: rgb(109, 243, 243);
+    text-shadow: 0 0 10px aqua;
+    transition: ease-in-out .7s;
+ }
+
+ .mostrar-video{
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in-out 1s;
+ }
+
+ /*----Bootstrap-----*/
+
+ .ncolor{
+
+ }
+.colormi{
+    background-color: #08152ef6;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    height: 60px;
+}
+
+.drk{
+    background-color: #08152e;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: transparent;
+    color: rgb(93, 243, 243);
+    text-shadow: 0 0 10px aqua;
+}
+
+
+.active{
+    transition: ease-in-out .4s;
+}
+
+.dropdown-item{
+    color: white;
+    border: none;
+}
+.dropdown-menu.show{
+    border: none;
+    background: #08152e;
+}
+
+.dropdown-item .active{
+    background-color: #08152e2d;
+}
+
+.deleted{
+    display: none;
+}
+
+/*QUERYS*/
+
+@media screen and (max-width:1024px) {
+    .navbar, .px-3 ,.mb-3 ,.fixed-top, .colormi{
+        display: none;
+    }
+    .dis__none{
+        background-color: #08152e;
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+    }
+    .dis__h{
+        display: flex ;
+        height: 100px;
+    }
+
+    .dis__a{
+        color: white;
+    }
+
+    .dis__btn{
+        background-color: white;
+        border: none;
+    }
+    .navbar-collapse{
+        background-color: #08152e79;
+        backdrop-filter: blur(5px);
+        height: 0;
+        opacity: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        transition: ease-in-out .13s;
+    }
+    .navbar-nav{
+        display: inherit;
+        align-items: center;
+        a{
+            color: white;
+            font-size: 1.2em;
+        }
+    }
+    .nav-link:focus, .nav-link:hover{
+        color: rgb(119, 248, 248);
+        text-shadow: 0 0 10px aqua;
+        scale: 1.1;
+        transition: ease-in-out .3s;
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+        color: rgb(119, 248, 248);
+        scale: 1.1;
+    }
+
+    .show{
+        height: 450px;
+        opacity: 1;
+    }
+}
+
+@media  screen and (max-width:795px) {
+    .cont-img{
+
+        display: none;
+    }
+    .cont__punto-clave{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .cont__introduccion{
+        width: 100%;
+        h1{
+            margin-top: 1em;
+            font-size: 2.5em;
+        }
+    }
+    .cont__title{
+        h1{
+            font-size: 3em;
+        }
+        h3{
+            font-size: 2.8em;
+        }
+    }
+    .list-i li{
+        font-size: 2em;
+    }
+    .punto__clave-title h1{
+        font-size: 2.5em;
+    }
+    .punto__clave-list ol{
+        font-size: .9em;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .punto__clave-list ol{
+        font-size: medium;
+    }
+}
+
+
+@media screen and (min-width:850px) {
+    .punto__clave-list ol{
+        font-size:.90em;
+    }
+}
+
+
